@@ -8,7 +8,10 @@ if(len(sys.argv) != 3 ):
     IN/OUT is the camera in which it is placed.""")
     quit(0)
 
-camera_index = int(sys.argv[1])
+if sys.argv[1].isdigit(): 
+    camera_index = int(sys.argv[1])
+else:
+    camera_index = sys.argv[1]
 type_IO = str(sys.argv[2])
 
 
@@ -25,7 +28,7 @@ obj = FR.Recognise(image_source, user_path, reference,camera_index,type_IO)
 obj.connect(sql_ip,sql_user,sql_password,sql_database)
 
 while(1):
-    opt = input("\n1.Train\n2.Recognise\n3.Exit\nEnter your option:")
+    opt = input("\n1.Enroll New User\n2.Track & Mark \n3.Exit\nEnter your option:")
     if(opt == '1'):
         obj.enroll()
     if(opt == '2'):
