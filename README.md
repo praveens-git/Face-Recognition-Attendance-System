@@ -2,9 +2,11 @@
 Smart Attendance system to mark the in/out time of Employees.
 
 Install the dependencies:
-    pip3 install -r requirements.txt
+     
+     pip3 install -r requirements.txt
 
-Running the Program:    
+Running the Program:
+    
     python3 main.py camera_rstp_http_link IN/OUT
 
 Create a folder named Images.
