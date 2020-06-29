@@ -26,7 +26,6 @@ class SQL:
     def new_id(self, eid, ename, edesg):
         self.mydb = self.DB.cursor()
         self.sql = "INSERT INTO `Attendance`.`Users` VALUES (" + eid + ",\""+ ename+ "\","+ "\""+ edesg +"\",NOW())"
-        print(self.sql)
         self.mydb.execute(self.sql)
         self.DB.commit()
 
