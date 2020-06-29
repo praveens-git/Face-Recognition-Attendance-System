@@ -14,7 +14,5 @@ Create a folder named Data and Move the user_list.txt to that folder
     mkdir Data
     mv user_list.txt Data/
 
-Troubleshooting:
- 
-Error:
+
   
