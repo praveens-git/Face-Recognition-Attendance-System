@@ -15,9 +15,9 @@ else:
 type_IO = str(sys.argv[2])
 
 
-image_source = 'Images\'
-user_path = 'Data\user_list.txt'
-reference = "Data\reference.yml"
+image_source = 'Images/'
+user_path = 'Data/user_list.txt'
+reference = "Data/reference.yml"
 
 sql_ip = "127.0.0.1"  #localhost
 sql_user = "root"
